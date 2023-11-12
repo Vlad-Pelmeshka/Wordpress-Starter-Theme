@@ -2,7 +2,6 @@
 /**
  * HEADER
  *
- * @package admiral-sudies
  */
 
     $main_logo = get_field('main_logo','options');

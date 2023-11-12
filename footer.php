@@ -2,7 +2,6 @@
 /**
  * FOOTER
  *
- * @package admiral-studies
  */
 
 $footer_logo        = get_field('footer_logo', 'options');

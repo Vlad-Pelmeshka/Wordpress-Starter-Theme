@@ -2,7 +2,6 @@
 /**
  * This file is used to register ACF Gutenberg blocks
  *
- * @package Admiral
  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;

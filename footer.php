@@ -12,8 +12,6 @@ $banking_systems    = get_field('banking_systems', 'options');
 
 </main>
 
-
-
 <footer class="footer">
     <div class="wrapper-container">
         <div class="footer-wrapper">

@@ -14,8 +14,8 @@ add_filter( 'block_categories_all', 'pr_add_custom_block_category' , 10, 2 );
 function pr_add_custom_block_category( $categories, $post ) {
     $desired_position = 0;
     $pr_category = array(
-        'slug'  => 'admiral-custom-blocks',
-        'title' => 'Admiral Blocks',
+        'slug'  => SITENAME . '-custom-blocks',
+        'title' => SITENAME . ' Blocks',
         'icon'  => 'block-default',
     );
 
@@ -38,11 +38,11 @@ function pr_register_acf_gutenberg_block_types() {
             acf_register_block_type(
                 array(
                     'name'            => $name . '-block',
-                    'title'           => __( ' Admiral', 'admiral' ) . ' | ' . ucwords( str_replace( '-', ' ', $name ) ),
-                    'description'     => ucwords( str_replace( '-', ' ', $name ) ) . __( ': ACF block for Gutenberg Editor', 'admiral' ),
+                    'title'           => __( SITENAME, SITENAME ) . ' | ' . ucwords( str_replace( '-', ' ', $name ) ),
+                    'description'     => ucwords( str_replace( '-', ' ', $name ) ) . __( ': ACF block for Gutenberg Editor', SITENAME ),
                     'render_template' => 'template-parts/blocks/block-' . $name . '.php',
                     'render_callback' => 'block_render',
-                    'category'        => 'admiral-custom-blocks',
+                    'category'        => SITENAME . '-custom-blocks',
                     'icon'            => 'wordpress',
                     'mode'            => 'edit',
                     'supports'        => array(
@@ -52,7 +52,7 @@ function pr_register_acf_gutenberg_block_types() {
                         'attributes' => array(
                             'mode' => 'preview',
                             'data' => array(
-                                'image' => '<img src="' . get_template_directory_uri() . '/template-parts/blocks/previews/' . ucwords( str_replace( '-', ' ', $name ) ) . '.png' . '" style="width:100%;display: block; margin: 0 auto;">'
+                                'image' => '<img src="' . get_template_directory_uri() . '/template-parts/blocks/previews/' . ucwords( str_replace( '-', ' ', $name ) ) . '.webp' . '" style="width:100%;display: block; margin: 0 auto;">'
                             ),
                         ),
                     ),

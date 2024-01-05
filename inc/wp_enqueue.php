@@ -3,8 +3,6 @@
 /*-----------------------------------------------------------------------------------*/
 
 function base_scripts_styles()  { 
-	// Define the version so we can easily replace it throughout the theme
-	define( 'VERSION', 1.0 );
 
 	// styles
 	wp_enqueue_style('theme', get_stylesheet_uri(), [] );

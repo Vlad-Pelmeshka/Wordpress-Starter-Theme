@@ -1,7 +1,9 @@
-
-# Log files
 *.log
-
-# Archive files
 *.zip
 *.rar
+
+
+# Wordpress stuff
+wp-content/themes/twenty*/
+wp-content/themes/starter_theme-main/assets/node_modules
+wp-content/themes/starter_theme-main/assets/node_modules/*
